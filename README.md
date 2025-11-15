@@ -19,7 +19,7 @@ Save and Document Results Capture screenshots of the waveform and save the simul
  Mealy 1011
 
 Verilog code
-
+```
 module mealy_fsm_1011(
 input clk,rst,xin,
 output reg zout);
@@ -75,9 +75,10 @@ end
 endcase
 end
 endmodule
+```
 
 Test bench
-
+```
 module mealy_fsm_1011_tb;
 reg clk_t,rst_t,xin_t;
 wire zout_t;
@@ -106,6 +107,7 @@ xin_t = 1'b1;
 end
 always #50  clk_t = ~clk_t;                 
 endmodule
+```
 
  
 // output Waveform
